@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOD TRAVEL - Agencia de Viajes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFD1DC;
+            background-image: linear-gradient(to bottom, #FFD1DC, #FFB6C1);
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .header {
+            margin-top: 50px;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 900;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: white;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .airplane {
+            width: 300px;
+            margin: 40px auto;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+        }
+
+        .decorations {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .stamp {
+            position: absolute;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #E75480;
+            border: 2px dashed #E75480;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transform: rotate(-15deg);
+            opacity: 0.8;
+        }
+
+        .stamp:nth-child(1) {
+            top: 20%;
+            left: 10%;
+        }
+
+        .stamp:nth-child(2) {
+            top: 70%;
+            right: 10%;
+        }
+
+        .stamp:nth-child(3) {
+            bottom: 20%;
+            left: 15%;
+        }
+
+        .credits {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.8rem;
+            color: #E75480;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .airplane {
+                width: 200px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Playfair+Display:ital@1&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="decorations">
+            <div class="stamp">✈️ BEST TRIP</div>
+            <div class="stamp">🌎 WANDERLUST</div>
+            <div class="stamp">⭐ 5 STARS</div>
+        </div>
+
+        <div class="header">
+            <h1 class="title">MOOD TRAVEL</h1>
+            <p class="subtitle">Agencia de Viajes</p>
+        </div>
+
+        <div class="airplane">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="#E75480" d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32z"/>
+            </svg>
+        </div>
+
+        <div class="credits">
+            Créditos: Marc Santiago Casas
+        </div>
+    </div>
+</body>
+</html>
